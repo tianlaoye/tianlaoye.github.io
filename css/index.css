@@ -1,0 +1,502 @@
+/* 
+* @Author: anchen
+* @Date:   2017-04-27 08:20:01
+* @Last Modified by:   anchen
+* @Last Modified time: 2017-04-30 12:46:29
+*/
+/*初始化*/
+body,img,h1,h2,h3,h4,h5,h6,input,ul,p{
+    padding:0;
+    margin:0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    vertical-align: middle;
+}
+s,i {
+    font-style: normal;
+    text-decoration: none;
+}
+.clearfix:after{
+    content:"";
+    clear:both;
+    visibility: hidden;
+    height:0;
+    line-height: 0;
+    display:block;
+}
+.w{
+    width:1200px;
+    margin:0 auto;
+}
+header{
+    width:100%;
+    height:60px;
+    background-color:#FAFAFA;
+    position:fixed;
+    z-index: 2;
+    top:0;
+    left:0;
+    transition:all .5s;
+}
+/*头部左侧*/
+.headerLeft{
+    float:left;
+    height:100%;
+    line-height: 60px;
+    padding-left:10px;
+}
+.headerLeft a{
+    font-size: 18px;
+    color:#14191e;
+}
+.headerLeft a:hover{
+    color:#f00;
+}
+/*头部右侧*/
+.headerRight{
+    height:60px;
+    line-height: 60px;
+    float:right;
+    padding-top: 10px;
+}
+.buyNow{
+    float:right;
+    height:40px;
+    background-color: #000;
+    color:#fff;
+    margin:0px 40px 0 0;
+    line-height: 40px;
+    padding:0 10px;
+    cursor:pointer;
+    border-radius:4px;
+    
+}
+.navBuy{
+    float:right;
+    position:relative;
+}
+.navBuy li{
+    height:40px;
+    float:left;
+    
+    line-height: 40px;
+}
+.navBuy li a{
+    color:#14191e;
+    display:block;
+    height:40px;
+    padding:0 40px;
+    font-size: 12px;
+}
+.navBuy li a:hover{
+    color:red;
+}
+.navBar{
+    position:absolute;
+    bottom:0;
+    left:20px;
+    width:60px;
+    height:2px;
+    background-color: red;
+    transition:all 0.5s;
+}
+.mainPhone{
+    background: url("../images/bg-screen-1.png");
+}
+.mainPage{
+    height:800px;
+    position:relative;
+}
+.screen1-phone{
+    height:305px;
+    width:1350px;
+    position:absolute;
+    top:250px;
+    left:-85px;
+    background:url("../images/screen-1-phone.png");
+    opacity: 0;
+    z-index: 1;
+    transform: translate(0, -100%); 
+}
+.screen1Word{
+    height:55px;
+    position:absolute;
+    top:160px;
+    text-align: center;
+    width:1200px;
+    opacity: 0;
+    transform:translate(0,100px);
+}
+.screen1Word i{
+    font-size:42px;
+    line-height: 55px;
+    
+
+}
+.screen1Word i:first-child{
+    color:red;
+}
+.screen1Word i:last-child{
+    color:#fff;
+}
+.screen1Shadow{
+    position:absolute;
+    bottom:100px;
+    left:-32px;
+    width:1233px;
+    height:411px;
+    background:url("../images/screen-1-shadow.png");
+    opacity: 0;
+    transform:translate(0,100%);
+}
+/*第二页界面*/
+.mainTwo{
+    background-color: #fafafa;
+    overflow: hidden;
+}
+.twoPage{
+    height:800px;
+    width:1200px;
+    position:relative;
+}
+.gracefulWord{
+    font-size: 42px;
+    width:1200px;
+    top:50px;
+    text-align: center;
+    color:red;
+    position:absolute;
+    opacity:0;
+    transform:translate(0,-100%);
+}
+.designWord{
+    font-size:16px;
+    width:100%;
+    position:absolute;
+    top:190px;
+    text-align: center;
+    opacity:0;
+    transform:translate(0,100%);
+}
+.screen2Phone{
+    height:873px;
+    width:800px;
+    position:absolute;
+    top:300px;
+    left:200px;
+    background: url("../images/bg-screen-2.png");
+    opacity:0;
+    transform:translate(0,100%);
+}
+.screen2Camera{
+    position:absolute;
+    font-size: 24px;
+    top:147px;
+    left:-143px;
+    padding-right:120px;
+    background:url("../images/icon-point-right.png") no-repeat 100px 5px;
+}
+.screen2Circle{
+    position:absolute;
+    top:143px;
+    left:37px;
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    background-color: red;
+    opacity:0.3;
+}
+.screen2Thin{
+    position:absolute;
+    font-size: 24px;
+    top:47px;
+    right:0px;
+    padding-left:120px;
+    background:url("../images/icon-point-left.png") no-repeat 0px 5px;
+}
+.screen2Circle2{
+    position:absolute;
+    top:42px;
+    right:186px;
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    background-color: red;
+    opacity: 0.3;
+}
+.screen2Srn{
+    position:absolute;
+    font-size: 24px;
+    top:347px;
+    right:-100px;
+    padding-left:120px;
+    background:url("../images/icon-point-left.png") no-repeat 0px 5px;
+}
+.screen2Circle3{
+    position:absolute;
+    top:342px;
+    right:86px;
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    background-color: red;
+    opacity: 0.3;
+}
+.mainThree{
+    background-color: #a71316;
+    overflow: hidden;
+}
+.threePage{
+    height:800px;
+    width:1200px;
+    position:relative;
+}
+.screen3Word{
+    font-size: 40px;
+    position:absolute;
+    color:#fff;
+    top:50px;
+    transform:translate(0,-100%);
+    opacity:0;
+}
+.screen3Design{
+    font-size: 16px;
+    color:#fff;
+    position:absolute;
+    top:200px;
+    transform:translate(0,-100%);
+    opacity:0;
+}
+.iconLeft{
+    position:absolute;
+    bottom:100px;
+    left:120px;
+    width:328px;
+    height:288px;
+    /*background-color: #fff;*/
+    opacity: 0;
+    transform:scale(0.5);
+}
+.iconLeft .icon1{
+    width:120px;
+    height:100px;
+    padding:0 10px 10px 0;
+    margin:0 10px 10px 0;
+    float:left;
+    border:1px solid #fff;
+    position:relative;
+    cursor:pointer;
+}
+.iconLeft .icon2{
+    width:120px;
+    height:100px;
+    padding:0 10px 10px 0;
+    margin:0 10px 10px 0;
+    float:left;
+    border:1px solid #fff;
+    position:relative;
+    cursor:pointer;
+}
+.iconLeft .icon3{
+    width:120px;
+    height:100px;
+    padding:0 10px 10px 0;
+    margin:0 10px 10px 0;
+    float:left;
+    border:1px solid #fff;
+    position:relative;
+    cursor:pointer;
+}
+.iconLeft .icon4{
+    width:120px;
+    height:100px;
+    padding:0 10px 10px 0;
+    margin:0 10px 10px 0;
+    float:left;
+    border:1px solid #fff;
+    position:relative;
+    cursor:pointer;
+}
+.icon1Word,.icon2Word,.icon3Word,.icon4Word{
+    text-align: center;
+    font-size: 36px;
+    color:#fff;
+    width:100%;
+    position:absolute;
+    top:20px;
+    -webkit-animation:rock 2s infinite alternate ease-in-out;
+}
+.icon1Word1,.icon2Word2,.icon3Word3,.icon4Word4{
+    width:100%;
+    text-align: center;
+    padding-top:70px;
+    padding-left:5px;
+    color:#fff;
+}
+.iconLeft .icon1:hover{
+    transform:scale(1.1);
+    transition:all 1s ease-in-out;
+}
+.iconLeft .icon2:hover{
+    transform:scale(1.1);
+    transition:all 1s ease-in-out;
+}
+.iconLeft .icon3:hover{
+    transform:scale(1.1);
+    transition:all 1s ease-in-out;
+}
+.iconLeft .icon4:hover{
+    transform:scale(1.1);
+    transition:all 1s ease-in-out;
+}
+.screen3Phone{
+    position:absolute;
+    top:200px;
+    right:-100px;
+    height:900px;
+    width:729px;
+    background:url("../images/bg-screen-3.png");
+    opacity:0;
+    transform:translate(0,100%);
+}
+.mainFour{
+    background-color:#fff;
+    overflow: hidden;
+}
+.fourPage{
+    height:800px;
+    width:1200px;
+    position:relative;
+}
+.screen4Model{
+    position:absolute;
+    width:100%;
+    text-align: center;
+    font-size: 42px;
+    color:red;
+    top:100px;
+    opacity: 0;
+    transform:translate(0,-100%);
+}
+.screen4Find{
+    position:absolute;
+    width:100%;
+    text-align: center;
+    font-size:16px;
+    top:200px;
+    opacity:0;
+    transform:translate(0,100%);
+}
+.screen4Phone1,.screen4Phone2,.screen4Phone3,.screen4Phone4{
+    width:25%;
+    height:400px;
+    position:absolute;
+    background:url("../images/phone-1.png") no-repeat center 0;
+    top:350px;
+    opacity:0;
+    transform:translate(0,100%);
+}
+.screen4Phone2{
+    background:url("../images/phone-2.png") no-repeat center 0;
+    left:300px;
+}
+.screen4Phone3{
+    background:url("../images/phone-3.png") no-repeat center 0;
+    left:600px;
+}
+.screen4Phone4{
+    background:url("../images/phone-4.png") no-repeat center 0;
+    left:900px;
+}
+.scrren4Word1,.scrren4Word2,.scrren4Word3,.scrren4Word4{
+    text-align: center;
+    margin-top:300px;
+    font-size: 18px
+}
+.scrren4Word1 span,.scrren4Word2 span,.scrren4Word3 span,.scrren4Word4 span{
+    color:#93999f;
+    font-size: 9px;
+}
+/*第五页基本样式*/
+.mainFive{
+    background-color:#d9dde1;
+    overflow: hidden;
+}
+.fivePage{
+    height:800px;
+    width:100%;
+    position:relative;
+}
+.screen5Function{
+    position:absolute;
+    width:100%;
+    color:red;
+    font-size:42px;
+    top:100px;
+    text-align: center;
+    opacity:0;
+    transform:translate(0,-100%);
+}
+.screen5More{
+    position:absolute;
+    width:100%;
+    font-size:16px;
+    top:200px;
+    text-align: center;
+    opacity:0;
+    transform:translate(0,100%);
+}
+.screen5Display{
+    position: absolute;
+    bottom:0;
+    height:400px;
+    width:100%;
+    background:url("../images/bg-screen-5.png") no-repeat center 0;
+    background-size: cover;
+    opacity:0;
+    transform:scale(0.5);
+}
+.mainBuy{
+    height:320px;
+    width:100%;
+    background:url("../images/bg-screen-buy.png") no-repeat center 0;
+    position: relative;
+}
+.sixbuyNow{
+    position:absolute;
+    top:120px;
+    height:80px;
+    background-color: red;
+    color:#fff;
+    font-size: 24px;
+    line-height: 80px;
+    left:50%;
+    
+    border-radius:5px;
+    margin-left:-100px;
+}
+.sixbuyNow:hover{
+    transform:translate(0,-10px);
+    transition:all 1s ;
+}
+.sixbuyNow a{
+    display: block;
+    padding:0 60px;
+    height:80px;
+    color:#fff;
+}
+footer{
+    height:80px;
+    width:100%;
+    text-align: center;
+    line-height: 80px;
+    background-color: #07111b;
+    color:#fff;
+    font-size: 12px;
+}

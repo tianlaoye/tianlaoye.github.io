@@ -1,0 +1,49 @@
+/* 
+* @Author: anchen
+* @Date:   2017-04-28 13:15:51
+* @Last Modified by:   anchen
+* @Last Modified time: 2017-04-29 11:28:00
+*/
+.screen1-show{
+    opacity: 1;
+    transform: none;
+    transition:all 1s;
+}
+.screen1-word{
+    opacity:1;
+    transform:none;
+    transition:all 1s;
+}
+.screen1-shadow{
+    opacity:1;
+    transform:none;
+    transition:all 1s;
+}
+
+.screen2Graceful,.screen2Design,.screenone,
+.screen3Small,.screen3design,.screen3PhoneShow,
+.screen4ModelShow,.screen4FindShow,.scrren4PhoneShow,
+.scrren5WordShow{
+    opacity:1;
+    transform:none;
+    transition:all 1s;
+}
+.iconLeftShow,.screen5PhoneShow{
+    opacity:1;
+    transform:scale(1.0);
+    transition:all 1s;
+}
+.screen2Circle,.screen2Circle2,.screen2Circle3{
+    -webkit-animation:mycircle 0.5s infinite alternate ease-in-out;
+}
+@-webkit-keyframes rock{
+    20%{transform:rotate(5deg);}
+    40%{transform:rotate(2deg);}
+    60%{transform:rotate(-2deg);}
+    80%{transform:rotate(-5deg);}
+    100%{transform:rotate(0deg);}
+}
+@-webkit-keyframes mycircle{
+    from{-webkit-transform:scale(0.0)}
+    to{-webkit-transform:scale(1.0}
+}
